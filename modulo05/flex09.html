@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <!-- FLEX-DIRETION
+     1- Flex-diretion: row (->)
+     2- Flex-diretion: row-reverse (<-)
+     3- Flex-diretion: column (^)
+     4- Flex-diretion: column-reverse( de baixo para cima.)
+     
+    -->
+
+    <style>
+        div.conteiner{
+            background-color: rgb(255, 0, 0);
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: rgb(42, 147, 165);
+            border: 1px solid black;
+            text-align: center;
+           
+        }
+
+        div#cxA{
+            flex: 1 0 200px;
+
+        }
+
+        div#cxB{
+            flex: 1 1 150px;
+
+        }
+
+        div#cxC{
+          flex: 1 8 auto;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+        
+
+    </div>
+    
+</body>
+</html>
